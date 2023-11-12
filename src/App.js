@@ -1,10 +1,24 @@
-import "./styles.css";
+import './styles.css';
+import Navbar from './Components/Navbar';
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Sample from './Sample';
+ import Homepages from './Components/Homepages';
+// import Footer from './Components/Footer';
 
-export default function App() {
+// import FAQAccordion from './Components/FAQAccordion';
+
+
+function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <Router>
+    <Navbar />
+      <Routes>
+        <Route path='/' element={<Homepages/>}/>
+      </Routes>
+    </Router> 
     </div>
   );
 }
+
+export default App;

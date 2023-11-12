@@ -1,0 +1,168 @@
+*{
+    margin:0;
+   padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+#video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+  }
+.content{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    margin-top: 80px;
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 3px 3px 3px #686464;
+}
+.content button{
+    width: 150px;
+    padding: 15px;
+    margin: 20px 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: rgb(251, 247, 247);
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(239, 237, 237);
+    font-weight: 600;
+}
+.content h6{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.content button:hover{
+    background: rgb(237, 237, 239);
+    colr:#000;
+    transition: 0.5s;
+}
+.container {
+    position: relative;
+    width: 300px; /* Adjust the container size */
+    height: 300px; /* Adjust the container size */
+  }
+  .content button:hover {
+    background-color: rgb(243, 244, 245);
+    color: rgb(14, 14, 14);
+    transition: background-color 0.5s, color 0.5s; /* Include transition for color change */
+  }
+.chat-icon {
+    position: fixed;
+    bottom: 100px;
+    left: 20px;
+    z-index: 1000; /* Ensure it's above other elements */
+    cursor: pointer;
+}
+
+.chat-icon img {
+    margin-top: 50px;
+    width: 5vw; /* Adjust size as needed */
+    height: 10vh;
+}
+.b ul{
+  display: flex;
+  border-bottom: 15px solid rgb(25, 52, 132);
+  border-radius: 10px;
+
+}
+.b ul li{
+  width: 40px;
+  height: 40px;
+  list-style: none;
+  background-color: rgb(243, 244, 246);
+  margin: auto 20px;
+  border-radius: 50%;
+  margin-left:150px;
+  box-shadow: 0 0 0 3px #fff;
+  animation: bouncing 1s linear infinite alternate-reverse;
+}
+@keyframes bouncing {
+  0%{
+      transform: translateY(0);
+  }
+  50%{
+      transform: translateY(-150px);
+  }
+  100%{
+      transform: translateY(0);
+  }
+}    
+
+.b ul li:nth-child(2){
+  animation-delay: 0.2s;
+
+}    
+.b ul li:nth-child(3){
+  animation-delay: 0.4s;
+
+} 
+.b ul li:nth-child(4){
+  animation-delay: 0.6s;
+
+} 
+.b ul li:nth-child(5){
+  animation-delay: 0.8s;
+
+}
+@media (max-width:990px){
+  .b ul li{
+    margin-left:100px;
+  }
+}
+@media (max-width:823px){
+  .b ul li{
+    margin-left:80px;
+  }
+}
+@media (max-width:738px){
+  .b ul li{
+    margin-left:60px;
+  }
+}
+@media (max-width:580px){
+  .b ul li{
+    margin-left:40px;
+  }
+  .chat-icon img {
+    width: 8vw; /* Adjust size as needed */
+    
+}
+
+}
+@media (max-width:490px){
+  .b ul li{
+    margin-left:25px;
+  }
+  .chat-icon img {
+    width: 12vw; /* Adjust size as needed */
+    
+}
+
+}
+
+@media (max-width:287px){
+  .b ul li{
+    margin-left:10px;
+  }
+  .content h1{
+    font-size: 25px;
+  }
+}
